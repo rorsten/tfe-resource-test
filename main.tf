@@ -4,7 +4,7 @@ variable "auto_tfvars_variable" {}
 
 resource "null_resource" "something" {
   triggers = {
-    new_workspace_variable = var.expected_workspace_variable
+    new_workspace_variable = jsonencode(var.expected_workspace_variable)
   }
 
   provisioner "local-exec" {
