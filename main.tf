@@ -19,3 +19,11 @@ output "null_id" {
 output "tfvars_var" {
   value = var.auto_tfvars_variable
 }
+
+output "complex_var" {
+  value = {
+    thinger = "foo"
+    bobber = "bar"
+  }
+}
+
