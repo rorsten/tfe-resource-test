@@ -21,9 +21,6 @@ output "tfvars_var" {
 }
 
 output "complex_var" {
-  value = {
-    thinger = "foo"
-    bobber = "bar"
-  }
+  value = var.expected_workspace_variable
 }
 
